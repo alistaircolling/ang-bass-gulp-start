@@ -32,27 +32,27 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     })
 
   //GALLERY ===========
-  .state('gallery', {
-    url: '/gallery',
-    templateUrl: 'partial-gallery.html',
+  .state('location', {
+    url: '/location',
+    templateUrl: 'partial-location.html',
     controller: function($scope) {
       // reset the scroll
     }
   })
 
-  //BOOK  ========
+  //beds  ========
 
   //GALLERY ===========
-  .state('book', {
-      url: '/book',
+  .state('beds', {
+      url: '/beds',
       views: {
         '': {
-          templateUrl: 'partial-book.html'
+          templateUrl: 'partial-beds.html'
         },
-        'prices-intro@book': {
+        'prices-intro@beds': {
           template: 'All rooms come with tea and coffee making facilities'
         },
-        'prices@book': {
+        'prices@beds': {
           templateUrl: 'table-data.html',
           controller: 'pricesController'
         }
