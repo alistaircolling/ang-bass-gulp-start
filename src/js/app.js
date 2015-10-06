@@ -48,10 +48,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             '': {
                 templateUrl: 'partial-beds.html'
             },
-            'prices-intro@beds': {
+            'columnOne@beds': {
                 template: 'All rooms come with tea and coffee making facilities'
             },
-            'prices@beds': {
+            'columnTwo@beds': {
                 templateUrl: 'table-data.html',
                 controller: 'pricesController'
             }
