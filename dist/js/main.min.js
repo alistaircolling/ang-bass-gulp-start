@@ -52,7 +52,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 template: 'All rooms come with tea and coffee making facilities'
             },
             'columnTwo@beds': {
-                templateUrl: 'table-data.html',
+                templateUrl: 'room-types.html',
                 controller: 'pricesController'
             }
         }
@@ -87,12 +87,21 @@ routerApp.controller('pricesController', function($scope) {
 
     $scope.rooms = [{
         name: 'Basic',
-        price: 50
+        price: 50,
+        image: 'http://www.designtripper.com/wp-content/uploads/2011/10/IMG_0202.jpg',
+        description: 'This is the cheapest room that we have.'
+
     }, {
-        name: 'En-suite',
-        price: 1000
-    }, {
-        name: 'Presidential',
-        price: 50000000
+        name: 'Pretty Fancy',
+        price: 100,
+        image: 'http://graphics8.nytimes.com/images/2011/04/05/t-magazine/05soho-casale/05soho-casale-custom1.jpg',
+        description: 'This is the mid-range suite.'
+
+    },{
+        name: 'Executive Suite',
+        price: 200,
+        image: 'http://www.psstructures.com.au/wp-content/gallery/hospitality-presidential-suite/presidential-suite-3.jpg',
+        description: 'This is our best room.'
+
     }]
 })
