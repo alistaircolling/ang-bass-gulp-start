@@ -1,12 +1,12 @@
 <div class="clearfix">
     <div class="border" ng-repeat="room in rooms">
-        <div class="flex border">
+        <div class="flex border border bg-teal">
             <div>
-                <div class="">{{room.name}}</div>
+                <div class="border bg-green">{{room.name}}</div>
                 <img src={{room.image}} class="" />
                 <div>
-                    <div class="p">{{room.description}}</div>
-                    <div class="">£{{room.price}}</div>
+                    <div class="border bg-fuchsia" >{{room.description}}</div>
+                    <div class="border bg-aqua">£{{room.price}}</div>
                 </div>
             </div>
         </div>

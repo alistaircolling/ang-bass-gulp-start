@@ -49,7 +49,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 templateUrl: 'partial-beds.html'
             },
             'columnOne@beds': {
-                template: 'All rooms come with tea and coffee making facilities'
+                template: 'All rooms come with <b>tea</b> and <b>coffee</b>  making facilities'
             },
             'columnTwo@beds': {
                 templateUrl: 'room-types.html',
