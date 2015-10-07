@@ -107,7 +107,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     /*})*/
 
 routerApp.controller('pricesController', function($scope, $http) {
-    $http.get('prices-data.json')
+    $http.get('assets/prices-data.json')
         .then(function(res) {
             $scope.rooms = res.data;
         });
