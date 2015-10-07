@@ -37,7 +37,13 @@ gulp.task('images', function() {
 
 gulp.task('assets-move', function() {
     gulp.src('src/assets/*')
-        .pipe(gulp.dest('dist/assets/'));
+        .pipe(gulp.dest('dist/assets/'))
+        .pipe(browserSync.reload({
+                stream: true
+            }
+        ));
+
+
 });
 
 gulp.task('styles', function() {
