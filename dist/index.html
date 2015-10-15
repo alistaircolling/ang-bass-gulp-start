@@ -48,18 +48,6 @@
         <div ui-view></div>
 
     </div>
-    <div ng-app ng-init="qty=1;cost=2" class="p4">
-        <b>How much will my stay cost?</b>
-        <div>
-            Nights:
-            <input type="number" min="0" ng-model="qty">
-        </div>
-        Room Cost:
-        <input type="number" min="0" ng-model="cost">
-        <div>
-            <b>Total</b> {{qty*cost | currency}}
-        </div>
-    </div>
-</body>
+   </body>
 
 </html>

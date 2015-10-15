@@ -1,19 +1,33 @@
 <!-- partial-home.html -->
 
 <div class="jumbotron text-center">
-  <h1>The Home Page</h1>
-  <p>This page demonstrates
-    <span class="text-danger">nested</span> views.</p>
-  <p>
-    Clicking either of the buttons below will show a nested view. Each nested view is contained within it's own html file. Each button uses the attribute
-    <code>ui-sref</code> and assigns a nested view using dot notation:
-    <code>.list</code> or
-    <code>.paragraph</code>.
-  </p>
-  <div class="center-block text-center">
-    <a ui-sref=".list" class="btn btn-primary">List</a>
-    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
-  </div>
+    <h1>The Home Page</h1>
+    <p>This page demonstrates
+        <span class="text-danger">nested</span> views.</p>
+    <p>
+        Clicking either of the buttons below will show a nested view. Each nested view
+        is contained within it's own html file. Each button uses the attribute
+        <code>ui-sref</code> and assigns a nested view using dot notation:
+        <code>.list</code> or
+        <code>.paragraph</code>.
+    </p>
+    <div ng-app ng-init="qty=1;cost=2" class="p4">
+        <b>How much will my stay cost?</b>
+        <div>
+            Nights:
+            <input type="number" min="0" ng-model="qty">
+        </div>
+        Room Cost:
+        <input type="number" min="0" ng-model="cost">
+        <div>
+            <b>Total</b> {{qty*cost | currency}}
+        </div>
+    </div>
+
+    <div class="center-block text-center">
+        <a ui-sref=".list" class="btn btn-primary">List</a>
+        <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+    </div>
 </div>
 <div class="container-fluid">
 
